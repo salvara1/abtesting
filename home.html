@@ -2,13 +2,140 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>A|B Testing</title>
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
-
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <header>A|B Testing</header>
+    <!-- Introduction Section -->
+    <div class="section">
+      <h2 class="title">Overview</h2>
+      In this project, I coupled my love for succulents with my interest in
+      analytics to perform an A/B test and statistical analysis to gather insight
+      into two different UI designs for an online succulent store. At this succulent
+      store, every user must place at least $150 worth of plants into their
+      shopping cart.
+    </div>
+    <!-- Developing B -->
+    <div class="section">
+      <h2 class="title">Developing Design B</h2>
+      <p class="text_before_image">
+        To start this process, I needed to alter a UI design in a way that could
+        potentially affect some of the metrics being tracked on the site. Below you will find
+        an image of design A and an
+        annotated screenshot of what I changed in the 'B' UI design as well as why I changed it.
+        In the next section, you can learn more about how I projected these changes would
+        affect the user experience.
+      </p>
+      <div class="column_container">
+        <h3>Design A:</h3>
+        <img class="website"src="b.png" alt="succulent site">
+        <h3>Design B:</h3>
+        <img class="website"src="a.png" alt="succulent site">
+      </div>
+      <p>View and interact with interface here: <a href="https://cs1300-abtesting-studio.herokuapp.com/"> https://cs1300-abtesting-studio.herokuapp.com/</a></p>
+    </div>
+
+    <!-- Hypotheses -->
+    <div class="section">
+      <h2 class="title"> Hypotheses</h2>
+      <p>
+        Before I could continue in evaluating these changes through an A/B test,
+        I needed to determine my expectations by creating hypotheses. In this
+        particular test, I wanted to gain insight into the effects of these
+        changes on two metrics: <span class="bold_large">time to completion</span> and
+        <span class="bold_large">return rate</span>.
+        <br>
+        <br>
+      </p>
+      <div class="definitions">
+        <h3 class="bold_large" style="text-align: center;">Metric Descriptions:</h3>
+        <ul>
+          <li> <u><b>Time to Completion:</b> </u> <br> the time it takes to complete the desired task.
+          In this case, that is to place at least $150 worth of plants in the shopping cart. </li>
+          <li> <u><b>Return Rate:</b></u> <br> the number of times a user returns to the shopping page
+              from the checkout page</li>
+        </ul>
+      </div>
+      <div class="">
+        <h3> 1. Return Rate Hypotheses</h3>
+        <ul>
+          <li>
+            <u> <b>Context: </b> </u> In design A, the user cannot see the total cost of their cart
+                  until they navigate to the checkout page. Because the user's goal is to obtain
+                  at least $150 in plants, I made the following hypotheses.</li>
+          <li>
+            <u> <b>Alternative Hypothesis: </b> </u> If users can check the total dollar amount in their carts
+            on the shopping page, then the return rate will decrease.
+          </li>
+          <li>
+            <u> <b>Null Hypothesis: </b> </u> If users can check the total dollar amount in
+            their carts onthe shopping page, then the return rate will either
+            remain the same or decrease.
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <h3> 2. Time to Completion Hypotheses</h3>
+        <ul>
+          <li>
+            <u> <b>Context: </b> </u> In design A, the user must scroll to the bottom of
+            the page to view all of the succulents and the checkout button.
+          </li>
+          <li>
+            <u> <b>Alternative Hypothesis: </b> </u> If the user can see all of the products and the checkout
+            button without needing to scroll, the time to completion will decrease.
+          </li>
+          <li>
+            <u> <b>Null Hypothesis: </b> </u>If the user can see all of the products and the checkout
+            button without needing to scroll, the time to completion will either increase or remain the same.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Data Collection Process -->
+    <div class="section">
+      <h2 class="title">Data Collection</h2>
+      <p>
+        To collect data for the A/B test, I asked my section classmates, friends,
+        and family to navigate the online store. Upon arrival to the store, either
+        design A or B was displayed to the user. Each user was also given a task-- to
+        add at least $150 worth of plants to the shopping cart.
+        <br>
+        <br>
+        I ended the test with 23 unique users. 12 used A and 11 used B.
+      </p>
+    </div>
+    <!-- lo-fi prototypes -->
+    <div class="section">
+      <h2 class="title">
+        Tests and Results
+      </h2>
+      <p>
+        To test my hypotheses, I conducted two statistical tests, a t-test for
+        the time to completion hypothesis and a chi-squared test for the return rate hypothesis.
+        Below is an infographic detailing the process and results
+      </p>
+      <img id=infographic src="infographic.png" alt="infographic">
+    </div>
+    <!-- Takeaways -->
+    <div class="section">
+      <h2 class="title">Takeaways</h2>
+      <p>
+        I was a bit surprised by the results of the tests, as I was expecting them to be more
+        significant; however there
+        were certain <span class="bold_large">limitations</span> that I think affected the results.
+        The first being that many of my users were using the page repetitively,
+        and they knew the goals and purpose of the assignment. In the future, I would
+        cast a wider, more diverse net. I also think the content of checkout page
+        played a larger role in return rate than either A or B. Users who enter the checkout
+        page are only presented with one option
+        "go back to shopping." I think this was the cause for signifiantly more returns, as a
+        large portion of users who returned didn't actually add any additional items to their carts.
+        In the future, I would be interested in running an A/B test on the checkout page!
+      </p>
+    </div>
   </body>
 </html>

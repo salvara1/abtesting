@@ -1,1 +1,95 @@
 /* Put your style information here! */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header{
+  display: flex;
+  font-size: 3.5em;
+  position: relative;
+  padding: 20px;
+}
+.section{
+  display: flex;
+  margin-top: 20px;
+  width: 70%;
+  flex-direction: column;
+}
+
+.row_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.definitions {
+  border-style: solid;
+  border-color: #B7C1D4;
+  width: 70%;
+  align-self: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#infographic {
+  max-width: 70%;
+  max-height: auto;
+  align-self: center;
+}
+.website {
+  max-width: 80%;
+  max-height: auto;
+  margin-bottom: 3%;
+}
+
+.column_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: fit-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #B7C1D4;
+}
+
+.bold_large {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1030px) {
+  .row_container {
+    flex-direction: column;
+  }
+  .website{
+    max-width: 100%;
+    max-height: auto;
+  }
+  .col_text{
+    max-width: 100%;
+  }
+
+  #bordered {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .rando {
+    margin-left: 0;
+
+  }
+
+
+}

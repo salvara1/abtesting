@@ -102,6 +102,7 @@ def perform_2_sample_t_test(a, b):
     :return: calculated p-value
     HINT: the t_dist.cdf() function might come in handy!
     '''
+    print('degrees t test: ' + str(get_2_sample_df(a,b)))
     return t_dist.cdf(get_t_score(a, b), get_2_sample_df(a,b))
 
 
@@ -198,6 +199,8 @@ def perform_chi2_homogeneity_test(observed_grid):
     HINT: the chi2.cdf() function might come in handy!
     '''
     #TODO: fill me in!
+    print('degrees chi test: ' + str(df_chi2(observed_grid)))
+
     return 1-chi2.cdf(chi2_value(observed_grid), df_chi2(observed_grid))
 
 # These commented out lines are for testing your main functions.
